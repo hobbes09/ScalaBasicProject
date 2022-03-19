@@ -159,8 +159,17 @@ scalaCenterEmail match {
   case None => println("Error: could not parse email")
 }
 
+//================================================
 
+object StringUtils {
+  implicit class StringImprovements(val s: String) {
+    def increment = s.map(c => (c + 1).toChar)
+  }
+}
 
+import StringUtils.StringImprovements
 
+println("HAL".increment)
 
+//================================================
 

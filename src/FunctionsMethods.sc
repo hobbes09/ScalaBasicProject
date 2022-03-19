@@ -52,7 +52,7 @@ println(myfc2("Geeks", "forGeeks"))
 
 def add(x:Int, y:Int) = x+y
 
-def addCurried(x:Int) = (y:Int) => x+y
+def addCurried(x:Int)= (y:Int) => x+y
 
 def addCurried2(x:Int) (y:Int) = x+y
 

@@ -41,6 +41,8 @@ val x1 = Range(0, 10, 2)
 // applying until method
 val y1 = 0 until 10 by 2
 
+x1.foreach(p=>{println("==> " + p)})
+
 // Displays true if both the
 // methods are equivalent
 println(x1 == y1)
